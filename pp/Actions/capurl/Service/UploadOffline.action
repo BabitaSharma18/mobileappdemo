@@ -1,0 +1,9 @@
+{
+    "Service": "/pp/Services/capurl.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/pp/Actions/capurl/Service/DownloadStartedMessage.action",
+    "OnFailure": "/pp/Actions/capurl/Service/SyncFailureMessage.action"
+}

@@ -1,0 +1,111 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/pp/Services/capurl.service",
+		"EntitySet": "Header_table",
+		"QueryOptions": ""
+	},
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "{doc_id}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "doc_id",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "doc_id",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "{eventTypeName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "eventTypeName",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "eventTypeName",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{title}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "title",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "title",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{status}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "status",
+							"IsVisible": "/pp/Rules/status_rule.js",
+							"Separator": true,
+							"Caption": "status",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "{date_created}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "date_created",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "date_created",
+							"Enabled": true,
+							"IsEditable": true
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Header_table_Edit",
+	"Caption": "Update Header_table Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"OnPress": "/pp/Actions/CloseModalPage_Cancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "",
+				"SystemItem": "Save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"OnPress": "/pp/Actions/capurl/Header_table/Header_table_UpdateEntity.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

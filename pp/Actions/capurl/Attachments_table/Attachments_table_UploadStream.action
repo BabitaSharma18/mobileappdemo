@@ -1,0 +1,17 @@
+{
+    "_Type": "Action.Type.ODataService.UploadStream",
+    "Target": {
+        "Service": "/pp/Services/capurl.service",
+        "EntitySet": "Attachments_table",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "content": "#Control:content/#Value"
+    },
+    "ShowActivityIndicator": true,
+    "ActionResult": {
+        "_Name": "uploadstream"
+    },
+    "OnSuccess": "/pp/Actions/UploadStreamSuccessMessage.action",
+    "OnFailure": "/pp/Actions/UploadStreamFailureMessage.action"
+}

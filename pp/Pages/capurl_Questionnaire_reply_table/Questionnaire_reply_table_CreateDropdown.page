@@ -1,0 +1,45 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/pp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/pp/Actions/capurl/Questionnaire_reply_table/Questionnaire_reply_table_CreateDropdown.action",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "Create Dropdown",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "questionnaire_id",
+							"_Name": "questionnaire_id",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "dropdown_value",
+							"_Name": "dropdown_value",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Questionnaire_reply_table_CreateDropdown",
+	"PrefersLargeCaption": true
+}

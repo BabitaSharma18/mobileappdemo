@@ -1,0 +1,17 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/pp/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/pp/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "questionnaire_id": "#Control:questionnaire_id/#Value",
+        "dropdown_value": "#Control:dropdown_value/#Value"
+    },
+    "Target": {
+        "EntitySet": "Dropdown",
+        "Service": "/pp/Services/capurl.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

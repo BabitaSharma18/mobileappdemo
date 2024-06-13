@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add Dropdown",
+            "OnPress": "/pp/Actions/capurl/Questionnaire_reply_table/NavToQuestionnaire_reply_table_CreateDropdown.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/pp/Rules/capurl/Questionnaire_reply_table/Questionnaire_reply_table_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

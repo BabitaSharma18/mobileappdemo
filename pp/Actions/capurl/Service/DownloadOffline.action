@@ -1,0 +1,50 @@
+{
+    "Service": "/pp/Services/capurl.service",
+    "DefiningRequests": [{
+            "Name": "Attachments_table",
+            "Query": "Attachments_table"
+        },
+        {
+            "Name": "Bid_reply",
+            "Query": "Bid_reply"
+        },
+        {
+            "Name": "Dropdown",
+            "Query": "Dropdown"
+        },
+        {
+            "Name": "Header_table",
+            "Query": "Header_table"
+        },
+        {
+            "Name": "Item_table",
+            "Query": "Item_table"
+        },
+        {
+            "Name": "Questionnaire_reply_table",
+            "Query": "Questionnaire_reply_table"
+        },
+        {
+            "Name": "Questionnaire_table",
+            "Query": "Questionnaire_table"
+        },
+        {
+            "Name": "Supplier_bid_table",
+            "Query": "Supplier_bid_table"
+        },
+        {
+            "Name": "supplier_replay",
+            "Query": "supplier_replay"
+        },
+        {
+            "Name": "Supplier_table",
+            "Query": "Supplier_table"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/pp/Actions/capurl/Service/SyncFailureMessage.action",
+    "OnSuccess": "/pp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}

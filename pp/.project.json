@@ -1,0 +1,58 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "CRUD",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "4efca955-cede-4e41-9517-4098fd974caa",
+		"Space": "fcdefffe-0728-4d9e-b56d-7c7d1ad1d3ec",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
+			},
+			"Destination": [
+				{
+					"CF": "capurl",
+					"MDK": "capurl",
+					"URL": ""
+				}
+			],
+			"Name": "ns.pp",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true,
+			"URL": "https://1f5c4f09trial-dev-nspp-approuter.cfapps.us10-001.hana.ondemand.com/nspp"
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/4efca955-cede-4e41-9517-4098fd974caa/space/fcdefffe-0728-4d9e-b56d-7c7d1ad1d3ec",
+		"AppId": "capurl",
+		"Destination": [
+			"capurl"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=capurl&ClientId=5a133d62-2b5c-42fd-96b6-c97c299f9590&SapCloudPlatformEndpoint=https://1f5c4f09trial-dev-capurl.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://1f5c4f09trial-dev-capurl.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://1f5c4f09trial-dev-capurl.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://1f5c4f09trial-dev-capurl.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

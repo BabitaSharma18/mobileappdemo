@@ -1,0 +1,20 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "Questionnaire_table",
+        "Service": "/pp/Services/capurl.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "doc_id": "#Control:doc_id/#SelectedValue",
+        "questionnaire_id": "#Control:questionnaire_id/#Value",
+        "description": "#Control:description/#Value",
+        "type": "#Control:type/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/pp/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/pp/Actions/UpdateEntityFailureMessage.action"
+}

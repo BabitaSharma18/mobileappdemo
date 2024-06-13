@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Dropdown",
+        "Service": "/pp/Services/capurl.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/pp/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/pp/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

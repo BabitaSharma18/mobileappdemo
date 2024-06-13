@@ -1,0 +1,24 @@
+{
+    "PopoverItems": [{
+            "Title": "Add Item_table",
+            "OnPress": "/pp/Actions/capurl/Header_table/NavToHeader_table_CreateItem_table.action"
+        },
+        {
+            "Title": "Add Supplier_table",
+            "OnPress": "/pp/Actions/capurl/Header_table/NavToHeader_table_CreateSupplier_table.action"
+        },
+        {
+            "Title": "Add Supplier_bid_table",
+            "OnPress": "/pp/Actions/capurl/Header_table/NavToHeader_table_CreateSupplier_bid_table.action"
+        },
+        {
+            "Title": "Add Questionnaire_table",
+            "OnPress": "/pp/Actions/capurl/Header_table/NavToHeader_table_CreateQuestionnaire_table.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/pp/Rules/capurl/Header_table/Header_table_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

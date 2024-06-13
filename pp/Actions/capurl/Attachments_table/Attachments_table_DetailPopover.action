@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/pp/Actions/capurl/Attachments_table/Attachments_table_OpenDocument.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/pp/Rules/capurl/Attachments_table/Attachments_table_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

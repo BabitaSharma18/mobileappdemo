@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/pp/Services/capurl.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/pp/Actions/capurl/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/pp/Actions/capurl/Service/CloseOfflineFailureMessage.action"
+}

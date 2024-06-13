@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/pp/Pages/capurl_Dropdown/Dropdown_Create.page",
+    "_Type": "Action.Type.Navigation"
+}
