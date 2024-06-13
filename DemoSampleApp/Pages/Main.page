@@ -1,0 +1,111 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Title",
+							"DataSubscriptions": [
+								"Customers"
+							],
+							"_Name": "FormCellTitle0",
+							"IsVisible": true,
+							"Separator": true,
+							"validationProperties": {
+								"ValidationMessageColor": "#c93030",
+								"SeparatorIsHidden": false,
+								"ValidationViewBackgroundColor": "#ba1b1b",
+								"ValidationViewIsHidden": true
+							},
+							"Styles": {
+								"Background": "stylej",
+								"Value": "Sample App"
+							},
+							"Value": "",
+							"PlaceHolder": "Sample App",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "UserName",
+							"PlaceHolder": "mail-id",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsVisible": true,
+							"Separator": true,
+							"validationProperties": {
+								"SeparatorIsHidden": true,
+								"ValidationViewIsHidden": true
+							},
+							"Caption": "Password",
+							"PlaceHolder": "password",
+							"KeyboardType": "Password",
+							"AlternateInput": "None",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Separator": true,
+							"Title": "Submit",
+							"Alignment": "Center",
+							"ButtonType": "Text",
+							"Semantic": "Normal",
+							"Image": "res://mdk_logo.png",
+							"ImagePosition": "Leading",
+							"Enabled": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "User Menu",
+				"Icon": "sap-icon://customer",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/DemoSampleApp/Actions/Application/UserMenuPopover.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}
