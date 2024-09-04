@@ -1,0 +1,17 @@
+{
+    "_Type": "Action.Type.ODataService.UploadStream",
+    "Target": {
+        "Service": "/testmdk/Services/mobileappazeem.service",
+        "EntitySet": "Products",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Picture": "#Control:Picture/#Value"
+    },
+    "ShowActivityIndicator": true,
+    "ActionResult": {
+        "_Name": "uploadstream"
+    },
+    "OnSuccess": "/testmdk/Actions/UploadStreamSuccessMessage.action",
+    "OnFailure": "/testmdk/Actions/UploadStreamFailureMessage.action"
+}

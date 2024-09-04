@@ -1,0 +1,31 @@
+Fail:
+	Failed to bundle project with error: Command failed: node "/extbin/local/openvscode-server/extensions/mdk-vsc-wing-24.8.0/node_modules/@sap/mdk-tools/lib/mdkcli.js" bundle --nativescript-project "/home/user/projects/testmdk/.build/testmdk/.build" --seam-project "/home/user/projects/testmdk/.build/testmdk" --externals  --filters /testmdk/Web/ /testmdk/testmdk/Web/ /testmdk/testmdk/Images/ /testmdk/testmdk/Extensions/ --bundle-zip-target-path "/home/user/projects/testmdk/.build/testmdk/.build" --bundle-definition-path "/extbin/local/openvscode-server/extensions/mdk-vsc-wing-24.8.0/node_modules/@sap/mdk-tools/out/testmdk"  --devtool "source-map" --create-bundle --ts-target "es6" --wmf --web
+MDK Bundler - failed to create bundle 
+asset bundle.js 317 KiB [emitted] (name: main) 1 related asset
+runtime modules 670 bytes 3 modules
+modules by path ./build.definitions/testmdk/Actions/ 27.3 KiB 91 modules
+modules by path ./build.definitions/testmdk/Pages/ 52.7 KiB 28 modules
+modules by path ./build.definitions/testmdk/Rules/ 18.8 KiB 22 modules
+json modules 33.5 KiB 5 modules
+modules by path ./build.definitions/testmdk/Globals/Application/*.global 231 bytes
+  ./build.definitions/testmdk/Globals/Application/AppDefinition_Version.global 51 bytes [built] [code generated]
+  + 3 modules
+asset modules 45.6 KiB
+  ./build.definitions/testmdk/Images/pic4.jpg 45.6 KiB [built] [code generated]
+  ./build.definitions/version.mdkbundlerversion 16 bytes [built] [code generated]
+modules by path ../../../../css-loader/dist/runtime/*.js 2.74 KiB
+  ../../../../css-loader/dist/runtime/sourceMaps.js 505 bytes [built] [code generated]
+  ../../../../css-loader/dist/runtime/api.js 2.25 KiB [built] [code generated]
++ 8 modules
+
+ERROR in ./build.definitions/testmdk/Images/pic5.jfif 1:0
+Module parse failed: Unexpected character '�' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+(Source code omitted for this binary file)
+ @ ./build.definitions/application-index.js 99:32-69
+
+webpack 5.88.0 compiled with 1 error in 390 ms
+ModuleParseError: Module parse failed: Unexpected character '�' (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+(Source code omitted for this binary file)
+undefined

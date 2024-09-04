@@ -1,0 +1,20 @@
+{
+    "PopoverItems": [{
+            "Title": "Open Document",
+            "OnPress": "/testmdk/Actions/mobileappazeem/Products/Products_OpenDocument.action"
+        },
+        {
+            "Title": "Add PurchaseOrderItem",
+            "OnPress": "/testmdk/Actions/mobileappazeem/Products/NavToProducts_CreatePurchaseOrderItem.action"
+        },
+        {
+            "Title": "Add SalesOrderItem",
+            "OnPress": "/testmdk/Actions/mobileappazeem/Products/NavToProducts_CreateSalesOrderItem.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/testmdk/Rules/mobileappazeem/Products/Products_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

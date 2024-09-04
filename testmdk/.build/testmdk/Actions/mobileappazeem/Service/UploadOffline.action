@@ -1,0 +1,9 @@
+{
+    "Service": "/testmdk/Services/mobileappazeem.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/testmdk/Actions/mobileappazeem/Service/DownloadStartedMessage.action",
+    "OnFailure": "/testmdk/Actions/mobileappazeem/Service/SyncFailureMessage.action"
+}

@@ -1,0 +1,172 @@
+{
+    "Caption": "$(L,Product_Detail)",
+    "DesignTimeTarget": {
+        "Service": "/testmdk/Services/mobileappazeem.service",
+        "EntitySet": "Products",
+        "QueryOptions": ""
+    },
+    "ActionBar": {
+        "Items": [{
+            "OnPress": "/testmdk/Actions/mobileappazeem/Products/NavToProducts_Edit.action",
+            "Position": "right",
+            "SystemItem": "Edit"
+        }, {
+            "OnPress": "/testmdk/Actions/mobileappazeem/Products/Products_DetailPopover.action",
+            "Position": "right",
+            "Text": "More"
+        }]
+    },
+    "Controls": [{
+        "Sections": [{
+            "ObjectHeader": {
+                "DetailImage": "/testmdk/Services/mobileappazeem.service/{@odata.readLink}/Picture",
+                "HeadlineText": "{Name}",
+                "Subhead": "{Category}",
+                "Tags": [],
+                "BodyText": "",
+                "Footnote": "{CurrencyCode}",
+                "Description": "{CategoryName}",
+                "StatusText": "{DimensionDepth}",
+                "StatusImage": "",
+                "SubstatusImage": "",
+                "SubstatusText": "{DimensionHeight}"
+            },
+            "_Type": "Section.Type.ObjectHeader"
+        }, {
+            "KeyAndValues": [{
+                    "KeyName": "Category",
+                    "Value": "{Category}"
+                },
+                {
+                    "KeyName": "CategoryName",
+                    "Value": "{CategoryName}"
+                },
+                {
+                    "KeyName": "CurrencyCode",
+                    "Value": "{CurrencyCode}"
+                },
+                {
+                    "KeyName": "DimensionDepth",
+                    "Value": "{DimensionDepth}"
+                },
+                {
+                    "KeyName": "DimensionHeight",
+                    "Value": "{DimensionHeight}"
+                },
+                {
+                    "KeyName": "DimensionUnit",
+                    "Value": "{DimensionUnit}"
+                },
+                {
+                    "KeyName": "DimensionWidth",
+                    "Value": "{DimensionWidth}"
+                },
+                {
+                    "KeyName": "LongDescription",
+                    "Value": "{LongDescription}"
+                },
+                {
+                    "KeyName": "Name",
+                    "Value": "{Name}"
+                },
+                {
+                    "KeyName": "PictureUrl",
+                    "Value": "{PictureUrl}"
+                },
+                {
+                    "KeyName": "Price",
+                    "Value": "{Price}"
+                },
+                {
+                    "KeyName": "ProductID",
+                    "Value": "{ProductID}"
+                },
+                {
+                    "KeyName": "QuantityUnit",
+                    "Value": "{QuantityUnit}"
+                },
+                {
+                    "KeyName": "ShortDescription",
+                    "Value": "{ShortDescription}"
+                },
+                {
+                    "KeyName": "SupplierID",
+                    "Value": "{SupplierID}"
+                },
+                {
+                    "KeyName": "Weight",
+                    "Value": "{Weight}"
+                },
+                {
+                    "KeyName": "WeightUnit",
+                    "Value": "{WeightUnit}"
+                }
+            ],
+            "Layout": {
+                "NumberOfColumns": 2
+            },
+            "MaxItemCount": 1,
+            "_Name": "SectionKeyValue0",
+            "_Type": "Section.Type.KeyValue"
+        }, {
+            "Header": {
+                "Caption": "PurchaseOrderItems"
+            },
+            "ObjectCell": {
+                "AccessoryType": "disclosureIndicator",
+                "Description": "{GrossAmount}",
+                "DetailImage": "",
+                "DetailImageIsCircular": false,
+                "Icons": [],
+                "StatusImage": "",
+                "Title": "{ProductID}",
+                "Footnote": "{ItemNumber}",
+                "PreserveIconStackSpacing": false,
+                "StatusText": "{NetAmount}",
+                "Subhead": "{CurrencyCode}",
+                "SubstatusText": "{PurchaseOrderID}",
+                "OnPress": "/testmdk/Actions/mobileappazeem/PurchaseOrderItems/NavToPurchaseOrderItems_Detail.action"
+            },
+            "EmptySection": {
+                "Caption": "No record found!"
+            },
+            "Target": {
+                "EntitySet": "{@odata.readLink}/PurchaseOrderItems",
+                "Service": "/testmdk/Services/mobileappazeem.service"
+            },
+            "_Type": "Section.Type.ObjectTable"
+        }, {
+            "Header": {
+                "Caption": "SalesOrderItems"
+            },
+            "ObjectCell": {
+                "AccessoryType": "disclosureIndicator",
+                "Description": "{DeliveryDate}",
+                "DetailImage": "",
+                "DetailImageIsCircular": false,
+                "Icons": [],
+                "StatusImage": "",
+                "Title": "{ProductID}",
+                "Footnote": "{GrossAmount}",
+                "PreserveIconStackSpacing": false,
+                "StatusText": "{ItemNumber}",
+                "Subhead": "{CurrencyCode}",
+                "SubstatusText": "{NetAmount}",
+                "OnPress": "/testmdk/Actions/mobileappazeem/SalesOrderItems/NavToSalesOrderItems_Detail.action"
+            },
+            "EmptySection": {
+                "Caption": "No record found!"
+            },
+            "Target": {
+                "EntitySet": "{@odata.readLink}/SalesOrderItems",
+                "Service": "/testmdk/Services/mobileappazeem.service"
+            },
+            "_Type": "Section.Type.ObjectTable"
+        }],
+        "DataSubscriptions": ["PurchaseOrderItems", "SalesOrderItems"],
+        "_Type": "Control.Type.SectionedTable",
+        "_Name": "SectionedTable"
+    }],
+    "_Type": "Page",
+    "_Name": "Products_Detail"
+}

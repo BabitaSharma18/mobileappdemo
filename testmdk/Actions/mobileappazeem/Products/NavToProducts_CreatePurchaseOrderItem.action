@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/testmdk/Pages/mobileappazeem_Products/Products_CreatePurchaseOrderItem.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/testmdk/Pages/mobileappazeem_SalesOrderHeaders/SalesOrderHeaders_CreateSalesOrderItem.page",
+    "_Type": "Action.Type.Navigation"
+}

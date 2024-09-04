@@ -1,0 +1,70 @@
+{
+    "Caption": "$(L,ProductCategory_Detail)",
+    "DesignTimeTarget": {
+        "Service": "/testmdk/Services/mobileappazeem.service",
+        "EntitySet": "ProductCategories",
+        "QueryOptions": ""
+    },
+    "ActionBar": {
+        "Items": [{
+            "OnPress": "/testmdk/Actions/mobileappazeem/ProductCategories/NavToProductCategories_Edit.action",
+            "Position": "right",
+            "SystemItem": "Edit"
+        }, {
+            "OnPress": "/testmdk/Rules/mobileappazeem/ProductCategories/ProductCategories_DeleteConfirmation.js",
+            "Position": "right",
+            "SystemItem": "Trash"
+        }]
+    },
+    "Controls": [{
+        "Sections": [{
+            "ObjectHeader": {
+                "DetailImage": "",
+                "HeadlineText": "{CategoryName}",
+                "Subhead": "{Category}",
+                "Tags": [],
+                "BodyText": "",
+                "Footnote": "{MainCategoryName}",
+                "Description": "{MainCategory}",
+                "StatusText": "{NumberOfProducts}",
+                "StatusImage": "",
+                "SubstatusImage": "",
+                "SubstatusText": ""
+            },
+            "_Type": "Section.Type.ObjectHeader"
+        }, {
+            "KeyAndValues": [{
+                    "KeyName": "Category",
+                    "Value": "{Category}"
+                },
+                {
+                    "KeyName": "CategoryName",
+                    "Value": "{CategoryName}"
+                },
+                {
+                    "KeyName": "MainCategory",
+                    "Value": "{MainCategory}"
+                },
+                {
+                    "KeyName": "MainCategoryName",
+                    "Value": "{MainCategoryName}"
+                },
+                {
+                    "KeyName": "NumberOfProducts",
+                    "Value": "{NumberOfProducts}"
+                }
+            ],
+            "Layout": {
+                "NumberOfColumns": 2
+            },
+            "MaxItemCount": 1,
+            "_Name": "SectionKeyValue0",
+            "_Type": "Section.Type.KeyValue"
+        }],
+        "DataSubscriptions": [],
+        "_Type": "Control.Type.SectionedTable",
+        "_Name": "SectionedTable"
+    }],
+    "_Type": "Page",
+    "_Name": "ProductCategories_Detail"
+}

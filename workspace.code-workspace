@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "path": "samplemdk"
+        }
+    ],
+    "settings": {
+        "SAP HANA Database Explorer.ShowXsAdvancedConnections": true,
+        "mdk.uieditor": {
+            "left": {
+                "visible": true,
+                "width": 448.99737548828125
+            },
+            "right": {
+                "visible": true
+            }
+        }
+    }
+}

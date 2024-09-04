@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add SalesOrderHeader",
+            "OnPress": "/testmdk/Actions/mobileappazeem/Customers/NavToCustomers_CreateSalesOrderHeader.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/testmdk/Rules/mobileappazeem/Customers/Customers_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

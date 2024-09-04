@@ -1,0 +1,63 @@
+{
+    "Caption": "$(L,Update_ProductCategory_Detail)",
+    "DesignTimeTarget": {
+        "Service": "/testmdk/Services/mobileappazeem.service",
+        "EntitySet": "ProductCategories",
+        "QueryOptions": ""
+    },
+    "ActionBar": {
+        "Items": [{
+            "Position": "left",
+            "SystemItem": "Cancel",
+            "OnPress": "/testmdk/Actions/CloseModalPage_Cancel.action"
+        }, {
+            "Position": "right",
+            "SystemItem": "Save",
+            "OnPress": "/testmdk/Actions/mobileappazeem/ProductCategories/ProductCategories_UpdateEntity.action"
+        }]
+    },
+    "Controls": [{
+        "Sections": [{
+            "_Type": "Section.Type.FormCell",
+            "_Name": "SectionFormCell0",
+            "Visible": true,
+            "Controls": [{
+                    "Caption": "Category",
+                    "_Name": "Category",
+                    "Value": "{Category}",
+                    "_Type": "Control.Type.FormCell.SimpleProperty",
+                    "IsEditable": false
+                },
+                {
+                    "Caption": "CategoryName",
+                    "_Name": "CategoryName",
+                    "Value": "{CategoryName}",
+                    "_Type": "Control.Type.FormCell.SimpleProperty"
+                },
+                {
+                    "Caption": "MainCategory",
+                    "_Name": "MainCategory",
+                    "Value": "{MainCategory}",
+                    "_Type": "Control.Type.FormCell.SimpleProperty"
+                },
+                {
+                    "Caption": "MainCategoryName",
+                    "_Name": "MainCategoryName",
+                    "Value": "{MainCategoryName}",
+                    "_Type": "Control.Type.FormCell.SimpleProperty"
+                },
+                {
+                    "Caption": "NumberOfProducts",
+                    "_Name": "NumberOfProducts",
+                    "Value": "{NumberOfProducts}",
+                    "KeyboardType": "Number",
+                    "_Type": "Control.Type.FormCell.SimpleProperty"
+                }
+            ]
+        }],
+        "_Name": "SectionedTable0",
+        "_Type": "Control.Type.SectionedTable"
+    }],
+    "_Type": "Page",
+    "_Name": "ProductCategories_Edit"
+}
