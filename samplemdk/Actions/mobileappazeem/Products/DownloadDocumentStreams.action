@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.OfflineOData.Download",
+	"OnFailure": "/samplemdk/Actions/mobileappazeem/Products/DownloadMediaFailedToast.action",
+	"Service": "/samplemdk/Services/mobileappazeem.service",
+	"DefiningRequests": [
+		{
+			"AutomaticallyRetrievesStreams": true,
+			"Name": "{ProductId}",
+			"Query": "{@odata.readLink}"
+		}
+	]
+}

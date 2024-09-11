@@ -1,0 +1,55 @@
+{
+	"Caption": "Products List",
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"Header": {
+						"UseTopPadding": false
+					},
+					"ObjectCell": {
+						"AccessoryType": "disclosureIndicator",
+						"Description": "",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": "/samplemdk/Rules/Product/GetDetailImage.js"
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"OnPress": "/samplemdk/Actions/mobileappazeem/Products/NavToProducts_Detail.action",
+						"Title": "{Name}",
+						"Footnote": "{SupplierID}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{CategoryName}",
+						"SubstatusText": ""
+					},
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "Item Search",
+						"BarcodeScanner": true,
+						"Delay": 500,
+						"MinimumCharacterThreshold": 3
+					},
+					"Target": {
+						"EntitySet": "Products",
+						"Service": "/samplemdk/Services/mobileappazeem.service",
+						"QueryOptions": ""
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Products_List",
+	"PrefersLargeCaption": true
+}

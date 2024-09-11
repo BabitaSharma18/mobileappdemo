@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "ProductCategories",
+        "Service": "/samplemdk/Services/mobileappazeem.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Category": "#Control:Category/#Value",
+        "CategoryName": "#Control:CategoryName/#Value",
+        "MainCategory": "#Control:MainCategory/#Value",
+        "MainCategoryName": "#Control:MainCategoryName/#Value",
+        "NumberOfProducts": "#Control:NumberOfProducts/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/samplemdk/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/samplemdk/Actions/UpdateEntityFailureMessage.action"
+}

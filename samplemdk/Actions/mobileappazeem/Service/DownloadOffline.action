@@ -1,0 +1,22 @@
+{
+    "Service": "/samplemdk/Services/mobileappazeem.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "ProductCategories",
+            "Query": "ProductCategories"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/samplemdk/Actions/mobileappazeem/Service/SyncFailureMessage.action",
+    "OnSuccess": "/samplemdk/Rules/mobileappazeem/ErrorArchive_CheckForSyncError.js"
+}

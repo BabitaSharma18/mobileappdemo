@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.CreateMedia",
+	"ActionResult": {
+		"_Name": "CreateProductResult"
+	},
+	"OnFailure": "/samplemdk/Actions/GenericToastMessage.action",
+	"OnSuccess": "/samplemdk/Actions/GenericToastMessage.action",
+	"Target": {
+		"Service": "/samplemdk/Services/mobileappazeem.service",
+		"EntitySet": "Products"
+	},
+	"Media": "#Control:ProductImage/#Value"
+}

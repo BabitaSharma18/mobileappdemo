@@ -1,0 +1,80 @@
+{
+	"Caption": "$(L,ProductCategory_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/samplemdk/Services/mobileappazeem.service",
+		"EntitySet": "ProductCategories",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/samplemdk/Actions/mobileappazeem/ProductCategories/NavToProductCategories_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/samplemdk/Rules/mobileappazeem/ProductCategories/ProductCategories_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{CategoryName}",
+						"Subhead": "{Category}",
+						"BodyText": "",
+						"Footnote": "{MainCategoryName}",
+						"Description": "{MainCategory}",
+						"StatusText": "{NumberOfProducts}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": ""
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Category",
+							"Value": "{Category}"
+						},
+						{
+							"KeyName": "CategoryName",
+							"Value": "{CategoryName}"
+						},
+						{
+							"KeyName": "MainCategory",
+							"Value": "{MainCategory}"
+						},
+						{
+							"KeyName": "MainCategoryName",
+							"Value": "{MainCategoryName}"
+						},
+						{
+							"KeyName": "NumberOfProducts",
+							"Value": "{NumberOfProducts}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductCategories_Detail",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/samplemdk/Services/mobileappazeem.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/samplemdk/Actions/mobileappazeem/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/samplemdk/Actions/mobileappazeem/Service/CloseOfflineFailureMessage.action"
+}

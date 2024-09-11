@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "Products",
+        "Service": "/samplemdk/Services/mobileappazeem.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/samplemdk/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/samplemdk/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

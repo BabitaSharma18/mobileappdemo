@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.ODataService.DownloadMedia",
+	"OnFailure": "/samplemdk/Actions/mobileappazeem/Products/ProductImageDownloadFailure.action",
+	"Target": {
+		"Service": "/samplemdk/Services/mobileappazeem.service",
+		"EntitySet": "Products"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.DownloadMedia",
+	"ActionResult": {
+		"_Name": "DownloadImageRes"
+	},
+	"OnFailure": "/samplemdk/Actions/mobileappazeem/Products/DownloadMediaFailedToast.action",
+	"OnSuccess": "/samplemdk/Rules/Product/DocumentFileSave.js",
+	"Target": {
+		"Service": "/samplemdk/Services/mobileappazeem.service",
+		"EntitySet": "Products",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

@@ -1,0 +1,12 @@
+{
+    "SAP HANA Database Explorer.ShowXsAdvancedConnections": true,
+    "mdk.uieditor": {
+        "left": {
+            "visible": true,
+            "width": 232
+        },
+        "right": {
+            "visible": true
+        }
+    }
+}
